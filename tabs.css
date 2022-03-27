@@ -1,10 +1,16 @@
 .tabs {
-    max-width: 1170px;
-    margin: 100px auto;
     font-family: 'Open Sans', sans-serif;
+    max-width: 1510px;
+    margin: 100px auto;
     color: #000000;
     padding: 0;
     background: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.container-tabs {
+    width: 1170px;
 }
 
 .tab {
