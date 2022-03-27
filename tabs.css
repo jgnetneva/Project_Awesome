@@ -1,0 +1,114 @@
+.tabs {
+    max-width: 1170px;
+    margin: 100px auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    padding: 0;
+    background: #fff;
+}
+
+.tab {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.tab__checked {
+    background: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    border-color: #C6CBCD;
+    border-width: 1px;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid #fff;
+    width: 200px;
+}
+
+.tab__noChecked {
+    background: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #C6CBCD;
+    width: 200px;
+}
+
+.line {
+    width: 600px;
+}
+
+.tabContent {
+    display: flex;
+    border: 1px solid #C6CBCD;
+    border-top: none;
+    padding: 0 0 0 100px;
+}
+
+.tabContent__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 54px;
+}
+
+.tabContent__title {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 40px 0 40px 0;
+    margin: 0;
+}
+
+.tabContent__desc {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0;
+}
+
+.tabContent__button {
+    font-weight: 600;
+    background: #EC7979;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    width: 270px;
+    height: 58px;
+    border: none;
+    transition: all 500ms ease;
+}
+
+.tabContent__button:hover {
+    background: #ec9191;
+}
+
+.tabContent__image {
+    padding: 0;
+    margin: 0;
+    height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
