@@ -1,0 +1,91 @@
+body {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.sectionAwesome {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    padding: 0 15px;
+    background: #fff;
+    margin-top: 50px;
+}
+
+.topBlock {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.topBlock__title {
+    font-size: 36px;
+    margin: 0;
+padding-bottom: 15px;
+}
+
+.topBlock__separator {
+    border: none;
+    background-color: #EC7979;
+    height: 1px;
+    width: 150px;
+    margin: 40px auto;
+}
+
+.topBlock__subtitle {
+    font-size: 18px;
+    color: #86878B;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    }
+
+.content__block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 350px;
+    padding: 0 10px;
+}
+
+.content__block__image img{
+    width: 170px;
+}
+
+.content__block__title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+
+.content__block__text {
+    font-size: 18px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
