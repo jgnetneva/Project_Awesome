@@ -1,0 +1,85 @@
+.customers {
+    font-family: 'Raleway', sans-serif;
+    max-width: 1510px;
+    height: 744px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container-customers {
+    width: 1170px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.customers__topBlock {
+    text-align: center;
+}
+
+.customers__title {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 54px auto;
+}
+
+.customers__separator {
+    width: 170px;
+    border: none;
+    border-bottom: 1px solid #EC7979;
+    margin: 0 auto;
+}
+
+.customers__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: #86878B;
+    margin: 40px auto;
+}
+
+.customers__blocks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.block__text {
+    box-sizing: border-box;
+    padding: 37px 25px;
+    width: 370px;
+    height: 180px;
+    text-align: center;
+    font-size: 18px;
+    color: #86878B;
+    background: #E2E2E2;
+    border-radius: 10px;
+}
+
+.block__triangle {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 30px solid #E2E2E2;
+    position: relative;
+    left: 60px;
+}
+
+.block__person {
+    display: flex;
+}
+
+.block__name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 30px;
+}
+
+.block__profession {
+    font-size: 18px;
+    padding-left: 30px;
+}
