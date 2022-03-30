@@ -10,7 +10,7 @@
     padding-left: 115px;
     margin: 0 auto;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     left: 0;
     right: 0;
 }
@@ -29,16 +29,17 @@
 }
 
 .header__nav li {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
     width: 114px;
 }
 
 .header__nav a {
     text-decoration: none;
     color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
 }
+
 .header__nav a:hover {
     text-decoration: underline;
 }
@@ -49,11 +50,11 @@
     height: 1026px;
     margin: 0 auto;
     color: #fff;
-    background: url("assets_header/city.svg");
+    background-image: url("assets_header/city.svg");
 }
 
 .main-opasity {
-    height: 1026px;
+    height: 100%;
     display: flex;
     align-items: center;
     background: rgba(0, 0, 0, 0.5);
@@ -68,6 +69,7 @@
     position: relative;
     display: flex;
 }
+
 
 .main__title {
     text-transform: uppercase;
@@ -184,8 +186,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 140px;
-    max-width: 1170px;
 }
 
 .socials__text {
