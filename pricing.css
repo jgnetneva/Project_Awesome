@@ -1,100 +1,110 @@
 .pricing {
-    font-family: "Raleway", sans-serif;
-    max-width: 1510px;
-    height: 900px;
-    margin: 50px auto;
-    color: #000000;
     background: #F5F5F5;
-    display: flex;
-    justify-content: center;
-}
-
-.container-pricing {
-    width: 1170px;
-    padding: 0 15px;
-    display: flex;
-    flex-direction: column;
-}
-
-.pricing__topBlock {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
     padding: 50px 0;
-    text-align: center;
-}
-.pricing__title {
-    font-size: 36px;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin: 0;
-    padding-top: 50px;
-    padding-bottom: 15px;
-}
-.pricing__separator {
-    border: none;
-    background-color: #EC7979;
-    height: 1px;
-    width: 150px;
-    margin: 40px auto;
-}
-.pricing__subtitle {
-    font-size: 18px;
-    color: #86878B;
-    margin: 0;
 }
 
-.tariffs {
+.pricing__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pricing__tariffs {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    height: 530px;
 }
-.tariffs__block {
-    width: 370px;
+
+.pricing__tariff {
+    position: relative;
+    width: 32%;
     text-align: center;
     transition: all 500ms ease;
 }
 
-.tariffs__block:hover {
-    align-self: flex-start;
+.pricing__tariff:hover {
+    top: -20px;
     filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
 }
 
-.tariffs__name {
+.tariff__name {
+    font-family: 'Open Sans', sans-serif;
     font-size: 24px;
-    font-weight: bold;
-    color: white;
+    font-weight: 700;
+    line-height: calc(33 / 24 * 100%);
+    color: #ffffff;
     background: #333333;
     border: 2px solid #F5F5F5;
     padding: 14px 0;
 }
-.tariffs__price {
+.tariff__price {
+    font-family: 'Raleway', sans-serif;
     font-size: 36px;
-    font-weight: bold;
-    color: white;
+    line-height: calc(42 / 36 * 100%);
+    font-weight: 700;
+    color: #ffffff;
     border: 2px solid #F5F5F5;
     background: #333333;
     padding: 27px 0;
 }
 
-.tariffs__free {
+.tariff__free {
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
+    font-weight: 400;
+    line-height: calc(21 / 18 * 100%);
     color: rgba(255, 255, 255, 0.5);
     background: #333333;
     border: 2px solid #F5F5F5;
     padding: 13px 0;
 }
-.tariffs__list {
-    list-style-type: none;
-    font-size: 18px;
-    color: #86878B;
-    padding-left: 0;
-    margin:0;
-}
 
-.tariffs__list__item {
+.tariff__list__item {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: calc(21 / 18 * 100%);
+    color: #86878B;
     background: white;
     border: 2px solid #F5F5F5;
     padding: 13px 0;
+}
+
+@media (max-width: 320px) {
+    .pricing {
+        padding: 0;
+    }
+
+    .pricing__tariffs {
+        flex-direction: column;
+    }
+
+    .pricing__tariff {
+        width: 100%;
+        padding-bottom: 27px;
+    }
+
+    .tariff__name {
+        font-size: 18px;
+        line-height: calc(25 / 18 * 100%);
+        padding: 10px 0;
+    }
+
+    .tariff__price {
+        font-size: 24px;
+        line-height: calc(28 / 24 * 100%);
+        padding: 23px 0;
+    }
+
+    .tariff__free {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: calc(16 / 14 * 100%);
+        padding: 10px 0;
+    }
+
+    .tariff__list__item {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: calc(16 / 14 * 100%);
+        padding: 10px 0;
+    }
 }
