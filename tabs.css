@@ -1,120 +1,157 @@
 .tabs {
-    font-family: 'Open Sans', sans-serif;
-    max-width: 1510px;
-    margin: 100px auto;
-    color: #000000;
-    padding: 0;
+    margin: 100px auto 50px;
     background: #fff;
-    display: flex;
-    justify-content: center;
 }
 
-.container-tabs {
-    width: 1170px;
-}
-
-.tab {
+.tabs__button {
     display: flex;
     justify-content: space-between;
-    height: 40px;
+    min-height: 40px;
+    text-align: center;
 }
 
-.tab__checked {
+.tabs__button__checked {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+    width: calc(50% / 3);
     background: white;
     text-transform: uppercase;
-    font-size: 14px;
-    text-align: center;
-    border-color: #C6CBCD;
-    border-width: 1px;
+    border: 1px solid #C6CBCD;
     border-radius: 5px 5px 0 0;
     border-bottom: 1px solid #fff;
-    width: 200px;
 }
 
-.tab__noChecked {
-    background: white;
-    text-transform: uppercase;
+.tabs__button__noChecked {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
     font-size: 14px;
-    text-align: center;
-    border-top: none;
-    border-right: none;
-    border-left: none;
+    color: #333333;
+    text-transform: uppercase;
+    width: calc(50% / 3);
+    background: white;
     border-bottom: 1px solid #C6CBCD;
-    width: 200px;
 }
 
 .line {
-    width: 600px;
+    width: 50%;
 }
 
-.tabContent {
+.tabs__content {
+    height: 500px;
     display: flex;
     border: 1px solid #C6CBCD;
     border-top: none;
     padding: 0 0 0 100px;
 }
 
-.tabContent__text {
+.tabs__content__text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
-    margin-bottom: 54px;
+    margin: 54px 0;
+    color: #000000;
 }
 
-.tabContent__title {
-    font-weight: bold;
+.tabs__content__title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
     font-size: 30px;
-    padding: 40px 0 40px 0;
-    margin: 0;
+    line-height: calc(41 / 30 * 100%);
 }
 
-.tabContent__desc {
+.tabs__content__desc {
     font-family: "Raleway", sans-serif;
+    font-weight: 400;
     font-size: 18px;
-    line-height: 21px;
-    margin: 0;
+    line-height: calc(21 / 18 * 100%);
 }
 
-.tabContent__button {
+.tabs__content__button {
+    font-family: "Open Sans", sans-serif;
     font-weight: 600;
-    background: #EC7979;
     font-size: 18px;
     color: #ffffff;
+    background: #EC7979;
     text-align: center;
     width: 270px;
-    height: 58px;
-    border: none;
+    min-height: 58px;
     transition: all 500ms ease;
 }
 
-.tabContent__button:hover {
+.tabs__content__button:hover {
     background: #ec9191;
 }
 
-.tabContent__image {
-    padding: 0;
-    margin: 0;
-    height: 500px;
+.tabs__content__image img {
+    height: 100%;
 }
 
+@media (max-width: 1024px){
+    .tabs__content {
+        height: 386px;
+        padding: 0 0 0 84px;
+    }
+    .tabs__content__text {
+        margin: 50px 0;
+    }
 
+    .tabs__content__title {
+        font-size: 24px;
+        line-height: calc(33 / 24 * 100%);
+    }
 
+    .tabs__content__desc {
+        font-size: 14px;
+        line-height: calc(16 / 14 * 100%);
+    }
 
+    .tabs__content__button {
+        width: 232px;
+    }
+}
 
+@media (max-width: 320px) {
+    .tabs__button__checked {
+        width: calc(100% / 3);
+    }
 
+    .tabs__button__noChecked {
+        width: calc(100% / 3);
+    }
 
+    .line {
+        display: none;
+    }
+    .tabs__content__image {
+        display: none;
+    }
 
+    .tabs__content {
+        height: 431px;
+        padding: 30px 20px 30px 25px;
+    }
 
+    .tabs__content__text {
+        margin: 0;
+        text-align: center;
+    }
 
+    .tabs__content__title {
+        font-size: 18px;
+        padding-bottom: 40px;
+        line-height: calc(25 / 18 * 100%);
+    }
 
+    .tabs__content__desc {
+        font-size: 13px;
+        line-height: calc(15 / 13 * 100%);
+    }
 
-
-
-
-
-
-
-
-
-
+    .tabs__content__button {
+        width: 100%;
+        height: 50px;
+    }
+}
